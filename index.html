@@ -1,70 +1,66 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SMMZone</title>
-<style>
-body{margin:0;font-family:Arial;background:#f5f7fb;color:#111}
-header{display:flex;justify-content:space-between;padding:16px;background:#fff;position:sticky;top:0}
-.logo{font-weight:bold;color:#6c4cff}
-.categories{display:flex;gap:10px;overflow:auto;padding:15px}
-.cat{background:#fff;padding:10px 16px;border-radius:20px;white-space:nowrap}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;padding:15px}
-.card{background:#fff;padding:15px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-button{width:100%;padding:12px;border:none;border-radius:10px;background:#6c4cff;color:#fff}
-.hero{padding:30px}
-.admin-link{color:#6c4cff;text-decoration:none}
-</style>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>SMMZone Pro</title>
+<link rel='stylesheet' href='style.css'>
 </head>
 <body>
-
-<header>
-<div class="logo">SMMZone</div>
-<a class="admin-link" href="admin.html">Admin</a>
+<header class='header'>
+<div class='logo'>SMMZone</div>
+<nav>
+<a href='index.html'>Home</a>
+<a href='services.html'>Services</a>
+<a href='tracking.html'>Track</a>
+<a href='contact.html'>Contact</a>
+<a href='admin/login.html'>Admin</a>
+</nav>
 </header>
 
-<section class="hero">
+<section class='hero'>
 <h1>Automatic SMM Marketplace</h1>
-<p>Fast, trusted and fully automatic digital services platform.</p>
+<p>Trusted digital services with direct checkout and automatic delivery.</p>
 </section>
 
-<div class="categories">
-<div class="cat">Facebook</div>
-<div class="cat">Instagram</div>
-<div class="cat">SMS</div>
-<div class="cat">Telegram</div>
-<div class="cat">YouTube</div>
-</div>
+<section class='categories'>
+<div class='cat'>Facebook</div>
+<div class='cat'>Instagram</div>
+<div class='cat'>YouTube</div>
+<div class='cat'>Telegram</div>
+<div class='cat'>SMS</div>
+<div class='cat'>OTP</div>
+</section>
 
-<section class="products">
-
-<div class="card">
+<section class='products'>
+<div class='card'>
 <h3>Facebook Followers</h3>
 <p>৳120</p>
-<button onclick="location.href='checkout.html'">Order Now</button>
+<a href='checkout.html'><button>Order Now</button></a>
 </div>
 
-<div class="card">
+<div class='card'>
 <h3>Instagram Likes</h3>
-<p>৳90</p>
-<button onclick="location.href='checkout.html'">Order Now</button>
+<p>৳80</p>
+<a href='checkout.html'><button>Order Now</button></a>
 </div>
 
-<div class="card">
+<div class='card'>
 <h3>YouTube Views</h3>
-<p>৳70</p>
-<button onclick="location.href='checkout.html'">Order Now</button>
+<p>৳60</p>
+<a href='checkout.html'><button>Order Now</button></a>
 </div>
 
-<div class="card">
+<div class='card'>
 <h3>SMS OTP</h3>
 <p>৳50</p>
-<button onclick="location.href='checkout.html'">Order Now</button>
+<a href='checkout.html'><button>Order Now</button></a>
 </div>
-
 </section>
 
+<footer>
+<p>© 2026 SMMZone</p>
+</footer>
 </body>
 </html>
